@@ -6,4 +6,4 @@
 import setuptools
 
 if __name__ == "__main__":
-    setuptools.setup(name="sensirion-ble")
+    setuptools.setup(name="sensirion-ble2")

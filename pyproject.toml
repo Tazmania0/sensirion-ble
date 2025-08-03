@@ -1,5 +1,5 @@
 [project]
-name = "sensirion-ble"
+name = "sensirion-ble2"
 description = "Manage Sensirion BLE devices"
 authors = [
     { name = "Aarni Koskela", email = "akx@iki.fi" },
@@ -7,7 +7,7 @@ authors = [
 requires-python = ">=3.9"
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/akx/sensirion-ble"
+repository = "https://github.com/Tazmania0/sensirion-ble"
 documentation = "https://sensirion-ble.readthedocs.io"
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
@@ -17,7 +17,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 packages = [
-    { include = "sensirion_ble", from = "src" },
+    { include = "sensirion_ble2", from = "src" },
 ]
 dependencies = [
     "bluetooth-data-tools>=0.1",
@@ -30,11 +30,11 @@ dynamic = [
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/akx/sensirion-ble/issues"
-"Changelog" = "https://github.com/akx/sensirion-ble/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/Tazmania0/sensirion-ble/issues"
+"Changelog" = "https://github.com/Tazmania0/sensirion-ble/blob/main/CHANGELOG.md"
 
 [tool.hatch.version]
-path = "src/sensirion_ble/__init__.py"
+path = "src/sensirion_ble2/__init__.py"
 
 [tool.hatch.build]
 only-packages = true
@@ -60,7 +60,7 @@ extend-select = ["B", "I", "UP"]
 ignore = ["E501"]
 
 [tool.ruff.isort]
-known-first-party = ["sensirion_ble", "tests"]
+known-first-party = ["sensirion_ble2", "tests"]
 
 [tool.mypy]
 check_untyped_defs = true
